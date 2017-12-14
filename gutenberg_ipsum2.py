@@ -9,7 +9,7 @@ parser = argparse.ArgumentParser(description='Generate random text with Markov c
 parser.add_argument('corpus', type=argparse.FileType('r+'),
                     help='corpus of training text')
 parser.add_argument('num_sentences', type=int, default=5, nargs='?',
-                    help='the number of sentences to output')
+                    help='the number of sentences to output (default: 5)')
 args = parser.parse_args()
 
 # Save arguments
