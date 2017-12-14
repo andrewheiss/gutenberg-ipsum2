@@ -1,0 +1,10 @@
+# Python stuff
+__pycache__/
+
+# Sublime Text stuff
+*.sublime-*
+
+# Only include some sample text
+corpora/*
+!corpora/copperfield.txt
+!corpora/christmascarol.txt
