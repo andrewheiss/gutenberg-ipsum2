@@ -22,7 +22,7 @@ In general, follow this syntax:
 
 Instead of generating all your text in a terminal and copying/pasting it to other applications, it's best to use `gutenberg_ipsum2` with a program like TextExpander. 
 
-For instance, we can make a new shell script snippet to put 5 paragraphs of *A Christmas Carol*-esque text where our cursor is. Create a new snippet with the following script:
+For instance, we can make a new shell script snippet to put 5 sentences of *A Christmas Carol*-esque text where our cursor is. Create a new snippet with the following script:
 
     #!/usr/bin/env bash
     cd path/to/gutenberg-ipsum2/; python gutenberg_ipsum2.py corpora/christmascarol.txt 5
