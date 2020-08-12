@@ -2,7 +2,7 @@
 import markovify
 import argparse
 import random
-from pos_tagging import POSifiedText 
+# from pos_tagging import POSifiedText 
 
 # Get command line arguments
 parser = argparse.ArgumentParser(description='Generate random text with Markov chains!')
