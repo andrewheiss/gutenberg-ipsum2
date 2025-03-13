@@ -4,18 +4,20 @@
 
 ## Installation
 
-    pip install -r requirements.txt
+This uses [uv](https://docs.astral.sh/uv/) to manage virtual environments and package installation. [Install uv](https://docs.astral.sh/uv/#installation) and then run this:
+
+    uv sync
 
 
 ## Basic usage
 
 To generate five sentences from Dickens's *David Copperfield*, navigate to this directory in a terminal and run:
 
-    python gutenberg_ipsum2.py corpora/copperfield.txt 5
+    uv run gutenberg_ipsum2.py corpora/copperfield.txt 5
 
 In general, follow this syntax:
 
-    gutenberg_ipsum2.py corpus [num_sentences]
+    uv run gutenberg_ipsum2.py corpus [num_sentences]
 
 
 ## Better usage
@@ -25,7 +27,7 @@ Instead of generating all your text in a terminal and copying/pasting it to othe
 For instance, we can make a new shell script snippet to put 5 sentences of *A Christmas Carol*-esque text where our cursor is. Create a new snippet with the following script:
 
     #!/usr/bin/env bash
-    cd path/to/gutenberg-ipsum2/; python gutenberg_ipsum2.py corpora/christmascarol.txt 5
+    cd path/to/gutenberg-ipsum2/; uv run gutenberg_ipsum2.py corpora/christmascarol.txt 5
 
 Then add an abbreviation for the snippet like `;ipchris`. I prefix all mine with `;ip` for "ipsum".
 
